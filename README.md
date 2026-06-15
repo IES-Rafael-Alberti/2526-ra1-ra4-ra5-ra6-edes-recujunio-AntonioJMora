@@ -1,3 +1,4 @@
+[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/f9yoQ7kr)
 # 2526 - Recuperación de entornos de desarrollo - DAW
 
 > AVISO!!! Únicamente puedes usar un editor (No IDE) y la documentación de plantUML para generar los diagramas UML. El uso de cualquier recurso que no sean estos, supondrá la no superación de la prueba.
@@ -5,8 +6,8 @@
 > Evaluación de RA1, RA4, RA5 y RA6.
  
 ---
-**Nombre:** [Nombre del alumno]
-**RA de los que te examinas:** [RA de los que te examinas. Ojo, no confundas RAs con Unidad]
+**Nombre:** Antonio Jesús Mora Cabeza
+**RA de los que te examinas:** RA4
 ---
 
 
@@ -48,6 +49,11 @@ Kotlin es un lenguaje de **alto nivel**, normalmente **compilado a bytecode** pa
 ### 8. (5 puntos - 10 min) ¿Qué áreas principales utiliza git para gestionar los cambios en un proyecto y para qué sirven cada uno?
 
 *Respuesta a la pregunta 8. (mínimo 200 palabras)*
+Git tiene 3 áreas principales, el area de trabajo, el área de espera y el área de subida. 
+
+ - El area de trabajo es el área en el que el usuario se encuentra trabajando, modificando ficheros, subiendo commits para la otra rama, y donde trae los datos de otras áreas. En caso de usar un fichero que esté por ejemplo en el área en el que se está esperando para subirse, el fichero cambia automáticamente de área.
+ - Área en la que los datos están esperando a ser subidos, este área tiene los datos guardados esperando a que el usuario quiera volver a usarlos o subirlos a la nube. En caso de que vuelva a usarlos, el fichero cambia al área de trabajo, y en caso de subirlos, pasa al área en el que los datos están guardados y subidos.
+ - Área en la que los datos están subidos, esta área es en la que los datos están guardados sin modificar, esperando a que llegue nueva información que el usuario suba y guardando la que ya tiene. En caso de que el usuario vuelva a modificar la información de estos datos ya subidos, vuelve al área de trabajo.
 
 
 ---
@@ -62,34 +68,34 @@ Ejemplo de respuesta:
 *Responde a las siguientes situaciones:*
 
 1. Ver el historial de commits en una sola línea.
-    + comando: 
+    + comando: `git log`
    
 2. Deshacer el último commit y deshacer cambios. Eliminar los cambios.
-    + comando:
+    + comando: `
 
 3. Crear la rama `featureA` y cambiar a ella.
-    + comando:
+    + comando: `git branch featureA`
 
 4. Ver el estado del repositorio.
-    + comando:
+    + comando: `git status`
 
 5. Clonar el repositorio `https://github.com/revilofe/HundirFlota.git`.
-    + comando:
+    + comando: `git clone https://github.com/revilofe/HundirFlota.git`
 
 6. Descargar al repositorio local los cambios del remote `origin` rama `main`.
-    + comando:
+    + comando: `git pull origin main`
 
 7. Subir los cambios del repositorio local al remote `origin` rama `main`.
-    + comando:
+    + comando: `git push origin main`
 
 8. Combinar la rama `featureA` con la rama principal.
-    + comando:
+    + comando: `
 
 9. Aplicar rebase a la rama `featureA` con la rama principal.
-    + comando:
+    + comando: `git rebase featureA main`
 
 10. Continuar el rebase de la rama `featureA` con la rama principal, una vez resueltos los conflictos.
-    + comando: 
+    + comando: `git commit -m "Rebase featureA"`
 
 ---
 
